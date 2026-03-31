@@ -17,19 +17,33 @@ If you run a script that requires admin rights and it fails, check the console o
 
 📂 Repository Structure
 Admin-Toolkit/
+
 │
+
 ├─ README.md               ← This file (you're reading!)
+
 ├─ generate-selfsigned.ps1    # Creates / updates a self‑signed cert & signs scripts
+
 ├─ Installer.bat              # Loads the scripts from an A: mapped drive or USB storage drive.  
+
 ├─ Installer2ExternalUSB.bat  # Clones this to an external USB location.
+
 ├─ Company.txt                # Company Name to sub-folder location.
+
 └─ Apps/					  # Used for localized installations for when Internet is not available
+
 └─ reg/						  # Registry keys - Some useful things to be tweaked by editing for your environment.
+
 └─ Fonts/					  # Additional fonts to be installed.  Barcode https://fonts.google.com/specimen/Libre+Barcode+128/license?preview.script=Latn General free non-bundled by MS.
+
 └─ wallpaper/                 # Setting your wallpaper to something company specific.
+
 └─ lgpo/                      # Since the environment is not AD connected, this is a backup, restore, and display of current applied policies.
+
 └─ scripts/
-   └─ (Company Name)       # <‑‑ where all script files are stored, e.g. C:\scripts(MyCo)
+
+   └─ (Company Name)       # <‑‑ where all script files are stored, e.g. C:\scripts(Company)
+
 🛠️ Installation
 Download the latest zip from the GitHub releases page or clone the repo:
 git clone https://github.com/bob-thetros/Admin-Toolkit.git
